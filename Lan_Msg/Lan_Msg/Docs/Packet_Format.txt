@@ -1,0 +1,16 @@
+LAN Messenger
+-------------
+
+Packet Format
+-------------
+
+Size					QWORD
+Reserved				QWORD
+ID						QWORD = "LANMSNGR"
+Type					QWORD
+DataOffset				QWORD
+Details					QWORD(LEN):ASTR (UTF-8)
+DataSize				QWORD
+Data					BYTE * DataSize
+
+
